@@ -2,7 +2,7 @@
 // CONFIGURAÇÕES DO MAILERSEND
 // ===============================
 
-const MAILERSEND_API_KEY = "mlsn.c59a41b726bc7199b6b81687b8988d90a8031706cc0e774b4c11f325756f8149";
+const MAILERSEND_API_KEY = "mlsn.c089b3166331edea4415ac6f239a1c103dbfe1525b9a30a6f34b92850f60d702";
 const MAILERSEND_API_URL = "https://api.mailersend.com/v1/email";
 
 const FROM_EMAIL = "no-reply@mailersend.com";
