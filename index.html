@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio pessoal, Samuel Sá - Engenharia de Computação">
+    <title>Portfólio - Samuel</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header-container">
+        <!-- <img src="img/foto-perfil.jpg" alt="Foto esquisita do Samuel" class="profile-img"> -->
+        <img src="img/cachorro.jpg" alt="Foto de perfil" class="profile-img">
+        <div class="header-text">
+            <h1 class="fw-bold display-5">Samuel Sá</h1>
+            <p class="lead">Estudante de Engenharia de Computação</p>
+            <address>
+                <p>Email: <a href="mailto:samuelsa1918@gmail.com" class="text-white">samuelsa1918@gmail.com</a></p>
+                <p>Telefone: (31) 9 9763-7093</p>
+                <p>GitHub: <a href="https://github.com/1Mol-de-H2O" class="text-white"
+                        target="_blank">github.com/1Mol-de-H2O</a></p>
+            </address>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg nav-custom">
+        <div class="nav-placeholder"></div>
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experiencia">Experiência</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projeto">Projetos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#formacao">Formação</a></li>
+            <li class="nav-item"><a class="nav-link" href="#jogodavelha">Jogo da Velha</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>
+                Sou um desenvolvedor iniciante, atualmente aprimorando meus conhecimentos em <strong>HTML, CSS e
+                    JavaScript</strong>.
+                Estudo Engenharia de Computação e desenvolvo projetos acadêmicos e pessoais com <strong>Java</strong> e
+                <strong>Python</strong>.
+            </p>
+            <p>
+                Tenho interesse em áreas como <em>cibersegurança</em>, <em>sistemas aeronáuticos</em> e, futuramente,
+                pretendo
+                seguir pesquisa em <em>computação quântica</em>.
+            </p>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiências</h2>
+            <div class="table-responsive experience-table-container">
+                <table class="table table-dark table-borderless align-middle experience-table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="col-3">Cargo/Projeto</th>
+                            <th scope="col" class="col-2">Organização</th>
+                            <th scope="col" class="col-3">Período</th>
+                            <th scope="col" class="col-4">Atividades/Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="text-primary fw-bold">Monitor</span>
+                                <br>
+                                <small>Projeto de Inclusão Digital</small>
+                            </td>
+                            <td>Cefet-MG - Timóteo</td>
+                            <td><time datetime="2025-10">Outubro 2025</time> - <time datetime="2025-12">Dezembro
+                                    2025</time></td>
+                            <td>
+                                <ul class="list-unstyled mb-0">
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> Auxílio a idosos no uso de
+                                        redes sociais</li>
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> Promoção de inclusão
+                                        digital</li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <tr class="table-secondary-row">
+                            <td>
+                                <span class="text-primary fw-bold">Projeto Pessoal</span>
+                                <br>
+                                <small>Software Educativo</small>
+                            </td>
+                            <td>Autônomo</td>
+                            <td><time datetime="2025-07">Julho 2025</time> - Em pausa</td>
+                            <td>
+                                <ul class="list-unstyled mb-0">
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> Criação de software para
+                                        ensino de matemática básica</li>
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> Prática de lógica e
+                                        desenvolvimento pessoal</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="projeto">
+            <h2>Projetos</h2>
+
+            <div class="cards-container">
+                <div class="row gy-4">
+
+                    <div class="col-md-4">
+                        <div class="card bg-secondary text-light h-100 shadow project-card-style">
+                            <div class="card-body">
+                                <h5 class="card-title">Tradutor para Código Morse</h5>
+                                <time datetime="2025-05">Maio 2025</time>
+                                <p></p>
+                                <p>O projeto simples, o qual recebe uma string informada e retorna a
+                                    a string em código morse para o usuário, por meio de uma tela.</p>
+                                <ul style="list-style-type: none">
+                                    <li><i class="fab fa-python me-2"></i> Python</li>
+
+                                    <li>Tkinter (Biblioteca interna)</li>
+                                </ul>
+                                <a href="https://github.com/1Mol-de-H2O/codigoMorse.git" class="btn btn-primary"
+                                    target="_blank">
+                                    Código fonte
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-secondary text-light h-100 shadow project-card-style">
+                            <div class="card-body">
+                                <h5 class="card-title">Criptógrafo de Texto</h5>
+                                <time datetime="2025-09">Setembro 2025</time>
+                                <p></p>
+                                <p>Criptografa e descriptografa textos digitados. Desenvolvido em Java com previsão de
+                                    interface futura.</p>
+                                <ul style="list-style-type: none">
+                                    <li><i class="fab fa-java me-2"></i>Java</li>
+                                </ul>
+                                <p>Prováveis integrações futuras para o projeto com interface</p>
+                                <ul style="list-style-type: none">
+                                    <li><i class="fab fa-html5 me-2"></i> HTML</li>
+                                    <li><i class="fab fa-css3-alt me-2"></i> CSS</li>
+                                    <li><i class="fab fa-js me-2"></i> JavaScript</li>
+                                </ul>
+                                <a href="https://github.com/1Mol-de-H2O/Fundamentos-de-Programa-o-II.git"
+                                    class="btn btn-primary" target="_blank">
+                                    Código fonte
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card bg-secondary text-light h-100 shadow project-card-style">
+                            <div class="card-body">
+                                <h5 class="card-title">Software de matemática básica para auxiliar crianças</h5>
+                                <time datetime="2025-07">Julho 2025</time>
+                                <p>Projeto mais complexo, criado para auxiliar crianças no aprendizado de matemática
+                                    básica.
+                                </p>
+                                <ul style="list-style-type: none">
+                                    <li>Iniciou com Python</li>
+                                    <li>Alterado para Java posteriormente</li>
+                                    <li>Interface provável com HTML, CSS e JavaScript</li>
+                                </ul>
+                                <p class="mt-3">
+                                    Projeto não está disponível em nenhuma nuvem ou em alguma unidade de armazenamento.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container mt-5">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <section id="habilidades" style="margin-top: 0;">
+                        <h2>Habilidades</h2>
+                        <ul class="list-unstyled">
+                            <li><i class="fab fa-python me-2"></i> Python</li>
+                            <li><i class="fab fa-java me-2"></i> Java</li>
+                            <li><i class="fab fa-html5 me-2"></i> HTML</li>
+                            <li><i class="fab fa-css3-alt me-2"></i> CSS</li>
+                            <li><i class="fab fa-js me-2"></i> JavaScript</li>
+                            <li><i class="fab fa-git-alt me-2"></i> Git</li>
+                            <li></li><i class="fas fa-terminal me-2 fa-vscode"></i> VS Code</li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="col-md-6">
+                    <section id="formacao" style="margin-top: 0;">
+                        <h2>Formação</h2>
+
+                        <div class="project-card-style mb-4">
+                            <h5 class="card-title">Engenharia de Computação</h5>
+                            <p class="text-secondary">Centro Federal de Educação Tecnológico de Minas Gerais</p>
+                            <p>2025 - 2030 (previsto)</p>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+        <section id="jogodavelha" class="py-5">
+            <div class="col-md-6 mt-4 mt-md-0">
+                <div class="card shadow-sm">
+                    <div class="card-header text-center">
+                        <h2 class="text-center mb-4">Jogo da Velha</h2>
+                    </div>
+
+                    <div class="card-body">
+
+                        <div class="row align-items-center">
+
+                            <!-- LADO ESQUERDO -->
+                            <div class="col-md-5 mb-3 mb-md-0">
+
+                                <div class="scoreboard mb-3 text-center">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <span class="player-x">X</span><br>
+                                            <span id="scoreX">0</span>
+                                        </div>
+
+                                        <div>
+                                            Empates<br>
+                                            <span id="scoreTies">0</span>
+                                        </div>
+
+                                        <div>
+                                            <span class="player-o">O</span><br>
+                                            <span id="scoreO">0</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="gameStatus" class="text-center mb-3">
+                                    Vez do jogador:<br>
+                                    <strong><span id="currentPlayer">X</span></strong>
+                                </div>
+
+                                <div class="text-center">
+                                    <button id="resetBtn" class="btn btn-primary w-100">
+                                        Novo jogo
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <!-- LADO DIREITO -->
+                            <div class="col-md-7 d-flex justify-content-center">
+                                <div id="gameBoard" class="game-board"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+        </section>
+        <section id="contato" class="py-5">
+
+            <div class="container">
+                <h2 class="text-center mb-4">Contato</h2>
+
+                <form id="contactForm" class="needs-validation" novalidate>
+
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome Completo</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required minlength="3"
+                            maxlength="100" pattern="[A-Za-zÀ-ÿ\s]+" title="Apenas letras e espaços são permitidos.">
+                        <div class="invalid-feedback">Insira um nome válido (mínimo 3 caracteres).</div>
+                        <div class="valid-feedback">Nome válido!</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" required
+                            placeholder="seu@email.com">
+                        <div class="invalid-feedback">Insira um e-mail válido.</div>
+                        <div class="valid-feedback">E-mail válido!</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="assunto" class="form-label">Assunto</label>
+                        <select class="form-select" id="assunto" name="assunto" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="proposta">Proposta de Trabalho</option>
+                            <option value="colaboracao">Colaboração</option>
+                            <option value="duvida">Dúvida Técnica</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                        <div class="invalid-feedback">Selecione um assunto.</div>
+                    </div>
+
+                    <div class="mb-3" id="subtopicoContainer" style="display: none;">
+                        <label for="subtopico" class="form-label">Subtópico</label>
+                        <select class="form-select" id="subtopico" name="subtopico"></select>
+                        <div class="invalid-feedback">Selecione um subtópico.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="5" minlength="10"
+                            maxlength="1000" required placeholder="Digite sua mensagem..."></textarea>
+                        <div class="invalid-feedback">A mensagem deve ter entre 10 e 1000 caracteres.</div>
+                        <small class="form-text text-muted">
+                            <span id="charCount">0</span>/1000 caracteres
+                        </small>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="submitBtn">
+                        <span class="spinner-border spinner-border-sm d-none me-2" id="loadingSpinner"></span>
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+
+            </div>
+        </section>
+
+        <!--
+================================================== 
+    Bootstrap do JS
+================================================== 
+-->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!--
+================================================== 
+    Meu arquivos em JS
+================================================== 
+-->
+
+        <script src="js/main.js"></script>
+        <script src="js/form-handler.js"></script>
+        <script src="js/api-client.js"></script>
+        <script src="js/game.js"></script>
+
+</body>
+
+</html>
