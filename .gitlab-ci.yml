@@ -1,10 +1,11 @@
 pages:
-  stage: deploy
-  script:
-    - mkdir public
-    - cp -r * public
-  artifacts:
-    paths:
-      - public
-  rules:
-    - when: always
+    stage: deploy
+    script:
+        - mkdir .public
+        - cp -r * .public
+        - mv .public public # Move para o diret rio "public"
+    artifacts:
+      paths:
+        - public
+    rules:
+        - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
