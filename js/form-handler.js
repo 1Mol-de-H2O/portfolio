@@ -6,6 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
       { value: 'clt', text: 'Vaga CLT' },
       { value: 'pj', text: 'Vaga PJ' },
     ],
+    // colaboracao: [
+    //   { value: 'open-source', text: 'Projeto Open Source' },
+    //   { value: 'startup', text: 'Startup' },
+    //   { value: 'evento', text: 'Evento/Talk' },
+    // ],
     duvida: [
       { value: 'tecnica', text: 'Dúvida Técnica' },
       { value: 'carreira', text: 'Carreira' },
@@ -100,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
     submitBtn.disabled = false;
 
     if (sucesso) {
-      alert("Mensagem enviada com sucesso! 🎉");
+      alert("Mensagem enviada com sucesso!");
       form.reset();
       document.getElementById("charCount").textContent = 0;
       document.getElementById("subtopicoContainer").style.display = "none";
