@@ -1,53 +1,53 @@
 // ===============================
 // CONFIGURAÇÕES DO MAILERSEND
 // ===============================
+const CONFIG = {
+  EMAILJS_PUBLIC_KEY: "mpo8hV6RInhMbz8U4",
+  EMAILJS_SERVICE_ID: "service_g641og7",
+  EMAILJS_TEMPLATE_ID: "template_ihe5y6u",
+};
 
-const MAILERSEND_API_KEY = "mlsn.c089b3166331edea4415ac6f239a1c103dbfe1525b9a30a6f34b92850f60d702";
-const MAILERSEND_API_URL = "https://api.mailersend.com/v1/email";
 
-const FROM_EMAIL = "no-reply@mailersend.com";
+form.addEventListener("submit", function(event) {
+  if(form.dataset.submitted == "true") return;
+  form.dataset.submitted = "true";
 
-const TO_EMAIL = "samuelsa1918@gmail.com";
+  event.preventDefault();
+  event.stopPropagation();
 
-// ===============================
-// Função de sanitização
-// ===============================
+  if (!form.checkValidity()) {
+    form.classList.add("was-validated");
+    return;
+  }
 
-function sanitize(text) {
-  return text
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .trim();
-}
+  botao.disabled = true;
+  spinner.classList.remove("d-none");
+  botao.innerText = "Enviando..."
 
-// ===============================
-// Função para enviar email via MailerSend
-// ===============================
-
-async function enviarEmail(formData) {
-
-  const body = {
-    from: { email: FROM_EMAIL },
-    to: [{ email: TO_EMAIL }],
-    subject: `Nova mensagem de contato: ${formData.assunto}`,
-    html: `
-      <h2>Nova mensagem do Portfólio</h2>
-      <p><strong>Nome:</strong> ${sanitize(formData.nome)}</p>
-      <p><strong>Email:</strong> ${sanitize(formData.email)}</p>
-      <p><strong>Assunto:</strong> ${sanitize(formData.assunto)}</p>
-      <p><strong>Subtópico:</strong> ${sanitize(formData.subtopico)}</p>
-      <p><strong>Mensagem:</strong><br>${sanitize(formData.mensagem).replace(/\n/g, "<br>")}</p>
-    `
+  const dados = {
+    nome: nome.value,
+    email: email.value,
+    assunto: assunto.value,
+    subtopico: subtopico.value || "Não informado",
+    mensagem: mensagem.value,
   };
+  
+  emailjs
+  .send(CONFIG.EMAILJS_SERVICE_ID, CONFIG.EMAILJS_TEMPLATE_ID, dados)
+  .then(() => {
+    alert("Mensagem enviada com sucesso");
+    form.rest();
+    form.classList.remove("was-validated");
+  })
+  .catch((error) => {
+    console.error("Erro EmailJS:", error);
+    alert("Erro ao enviar mensagem. Verfique o console.")
+  })
+  .finally(() => {
+    botao.disabled = false;
+    form.dataset.submitted = "false";
+    spinner.classList.add("d-none");
+    botao.innerText = "Enviar Mensagem";
+  })
 
-  const response = await fetch(MAILERSEND_API_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Authorization": `Bearer ${MAILERSEND_API_KEY}`
-    },
-    body: JSON.stringify(body)
-  });
-
-  return response.ok;
-}
+});
