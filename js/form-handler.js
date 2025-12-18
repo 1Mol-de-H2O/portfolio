@@ -6,11 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
       { value: 'clt', text: 'Vaga CLT' },
       { value: 'pj', text: 'Vaga PJ' },
     ],
-    colaboracao: [
-      { value: 'open-source', text: 'Projeto Open Source' },
-      { value: 'startup', text: 'Startup' },
-      { value: 'evento', text: 'Evento/Talk' },
-    ],
     duvida: [
       { value: 'tecnica', text: 'Dúvida Técnica' },
       { value: 'carreira', text: 'Carreira' },
