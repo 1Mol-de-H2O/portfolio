@@ -6,6 +6,9 @@ Este trabalho tem como foco principal a **verificação e validação de formul�
 
 A aplicação foi construída utilizando HTML, CSS e JavaScript, prezando pela organização do código, experiência do usuário e consistência visual.
 
+Link para a visualização
+http://portfolio-d1d74b.pages.alessiojr.com/
+
 ---
 
 ## 2. Objetivos
